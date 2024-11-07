@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,5 +9,121 @@
     <a href="balakrishnan2k00.github.io">balakrishnan2k00.github.io</a>
     <br />
     <a href="https://balakrishnan2k00.github.io/TicTacToe">Tic-Tac-Toe</a>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balakrishnan's Profile</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #333;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 1000px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    /* Header Styling */
+    .profile-header {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .profile-header h1 {
+      margin: 0;
+    }
+
+    .profile-header p {
+      font-size: 1.1em;
+      margin-top: 5px;
+    }
+
+    /* Cubicle Section Styling */
+    .cubicle-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .cubicle {
+      width: 150px;
+      height: 150px;
+      background-color: #4CAF50;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 8px;
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+
+    .cubicle:hover {
+      transform: scale(1.05);
+    }
+
+    .cubicle a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Profile Header -->
+    <div class="profile-header">
+      <h1>Balakrishnan</h1>
+      <p>Software Engineer | ASP.NET, React, and .NET Expert | Banking & Finance Solutions</p>
+    </div>
+
+    <!-- Cubicle Section -->
+    <div class="cubicle-section" id="cubicle-section">
+      <!-- Dynamic cubicles will be populated here -->
+    </div>
+  </div>
+
+  <script>
+    // Repository Data (Replace with actual links and names)
+    const repositories = [
+      { name: "GitHub Repo 1", url: "https://github.com/user/repo1" },
+      { name: "GitHub Repo 2", url: "https://github.com/user/repo2" },
+      { name: "GitHub Repo 3", url: "https://github.com/user/repo3" },
+      { name: "GitHub Repo 4", url: "https://github.com/user/repo4" },
+      // Add more repositories as needed
+    ];
+
+    // Populate Cubicle Section
+    const cubicleSection = document.getElementById('cubicle-section');
+
+    repositories.forEach(repo => {
+      const cubicle = document.createElement('div');
+      cubicle.className = 'cubicle';
+      cubicle.innerHTML = `<a href="${repo.url}" target="_blank">${repo.name}</a>`;
+      cubicleSection.appendChild(cubicle);
+    });
+  </script>
+
 </body>
 </html>
